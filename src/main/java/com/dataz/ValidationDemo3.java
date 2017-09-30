@@ -7,12 +7,9 @@
 package com.dataz;
 
 import com.dataz.entity.PayLoadBean;
-import com.dataz.entity.User;
 import com.dataz.payloads.Severity;
 
 import javax.validation.*;
-import javax.validation.executable.ExecutableValidator;
-import java.lang.reflect.Constructor;
 import java.util.Set;
 
 public class ValidationDemo3 {
@@ -37,7 +34,7 @@ public class ValidationDemo3 {
 
         //uncommenting next line will give us info severity
         // or setting an non-empty string won't give any validation error
-        bean.setStr("");
+//        bean.setStr("");
 
         Set<ConstraintViolation<PayLoadBean>> constraintViolations =
                 validator.validate(bean);
