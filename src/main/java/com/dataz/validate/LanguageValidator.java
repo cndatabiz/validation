@@ -21,6 +21,7 @@ public class LanguageValidator implements ConstraintValidator<Language, String> 
         if (value == null) {
             return false;
         }
+
         for (Locale locale : Locale.getAvailableLocales()) {
             if (locale.getDisplayLanguage().equalsIgnoreCase(value)) {
                 return true;

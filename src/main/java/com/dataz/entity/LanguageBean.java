@@ -20,5 +20,4 @@ public class LanguageBean {
         this.language = language;
     }
 
-
 }
